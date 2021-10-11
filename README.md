@@ -17,7 +17,7 @@ The coordinate is consisted with an alphabet character and a number. The columns
 <br>
 Below is an image that explains the coordinate system.
 <br>
-<img src="./image/coordinate_system.png" alt="coordinate system" width="600"/>
+<img src="./image/coordinate_system.png" alt="coordinate system" width="500"/>
 
 ## Dummy AI
 There is an example that randomly generates 2 coordinates and sends to the single mode server. Due to the fact that it just generates coordinates, it may send invalid coordinates.
