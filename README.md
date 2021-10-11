@@ -8,7 +8,7 @@ This API is for Connect Six programs developed with the Java Programming languag
 * public String letsConnect(String ip, int port, String color)
 * public String drawAndRead(String draw)
 * public String query(String position)
-#### Please refer to the javadoc for specific information.
+<b>Please refer to the javadoc for specific information.</b>
 
 ## Coordinate
 The coordinate is consisted with an alphabet character and a number. The columns are notated with 'A' ~ 'T' with 'I' not included. The rows are notated with 1 ~ 19. The one digit numbers should have a leading 0.
