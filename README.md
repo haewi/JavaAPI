@@ -10,6 +10,7 @@
 * public String query(String position)
 <br>
 <b>각 method에 대한 구체적인 설명은 javadoc을 참조하시기 바랍니다.</b>
+<br>
 
 ## 좌표 시스템
 바둑판의 좌표는 alphabet character 하나와 숫자로 표기합니다. 바둑판의 세로줄은 alphabet 'A' ~ 'T' 로 표기하고 이때 'I'는 포함되지 않습니다. 가로줄은 숫자 1 ~ 19로 표기하며 10 이하의 숫자들은 십의 자리에 0을 넣어주어야합니다. 하나의 좌표는 이 두 정보를 합친 String으로 표현해야합니다.
