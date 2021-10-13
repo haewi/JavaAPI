@@ -9,6 +9,7 @@ This API is for Connect Six programs developed with the Java programming languag
 * public ConnectSix(String ip, int port, String color)
 * public String letsConnect(String ip, int port, String color)
 * public String drawAndRead(String draw)
+  *  hi
 * public String query(String position)
 <br>
 <b>Please refer to the javadoc for specific information about the functions.</b>
