@@ -6,7 +6,7 @@ This API is for Connect Six programs developed with the Java programming languag
 이 API는 자바 프로그래밍 언어로 개발한 육목 AI를 프로그램들을 위한 API입니다. 모든 method들은 싱글 모드 서버와 연결하고 소통하기 위한 기능들이 구현되어있습니다.
 
 ## Methods
-&#9; * public ConnectSix(String ip, int port, String color)
+* public ConnectSix(String ip, int port, String color)
 * public String letsConnect(String ip, int port, String color)
 * public String drawAndRead(String draw)
 * public String query(String position)
