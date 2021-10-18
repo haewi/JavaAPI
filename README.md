@@ -49,7 +49,7 @@ If the user sends an invalid coordinate, an error message will be sent to the si
     3. `BADINPUT`
         - The first move is not "K10" for black or "" for white.
         - The moves other than the first move don't hold two positions.
-        - Any other inputs that doesn't follow the position notation.
+        - Any other inputs that doesn't follow the position notation.   
     **All positions will follow the position notation explained above.**   
     __Parameter__   
     - `draw` The position where the user will put their stones.   
