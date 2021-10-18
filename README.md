@@ -53,7 +53,7 @@ If the user sends an invalid coordinate, an error message will be sent to the si
             - Any other inputs that doesn't follow the position notation.
         </li>
     </ol>
-    **All positions will follow the position notation explained above.**   
+    <!-- **All positions will follow the position notation explained above.**    -->
 __Parameter__   
     - `draw` The position where the user will put their stones.   
        
