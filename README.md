@@ -16,13 +16,13 @@ This API is for Connect Six programs developed with the Java programming languag
 ## Coordinate System
 The coordinate is consisted with an alphabet character and a number. The columns are notated with 'A' to 'T' with 'I' not included. The rows are notated with 1 to 19. The one digit numbers may or may not have a leading 0. To express more than one coordinates, the coordinates should be separated with `:`.
 <br>
-바둑판의 좌표는 alphabet character 하나와 숫자로 표기합니다. 바둑판의 세로줄은 alphabet 'A' 부터 'T' 로 표기하고 이때 'I'는 포함되지 않습니다. 가로줄은 숫자 1 부터 19로 표기하며 10 이하의 숫자들은 십의 자리를 0으로 표기해도 안해도됩니다. 하나의 좌표는 이 두 정보를 합친 String으로 표현해야합니다. 여러 좌표들을 표기하기 위해서는 좌표들 사이에 ':'를 넣어 하나의 String으로 만들어야합니다.
-* Ex) "A01", "A1", "B03", "B3", "J12", "A01:E13", "E11:J18:K10:T19"
+바둑판의 좌표는 alphabet character 하나와 숫자로 표기합니다. 바둑판의 세로줄은 alphabet 'A' 부터 'T' 로 표기하고 이때 'I'는 포함되지 않습니다. 가로줄은 숫자 1 부터 19로 표기하며 10 이하의 숫자들은 십의 자리를 0으로 표기해도 안해도됩니다. 하나의 좌표는 이 두 정보를 합친 String으로 표현해야합니다. 여러 좌표들을 표기하기 위해서는 좌표들 사이에 ₩:₩를 넣어 하나의 String으로 만들어야합니다.
+* Ex) `A01`, `A1`, `B03`, `B3`, `J12`, `A01:E13`, `E11:J18:K10:T19`
 Strict notation: coorinate with leading 0.
-* Ex) "A01", "C04"
+* Ex) `A01`, `C04`
 <br>
 Extended notation: coorinate without leading 0.
-* Ex) "A1", "C4"
+* Ex) `A1`, `C4`
 <br>
 <br>
 Below is an image that explains the coordinate system.
