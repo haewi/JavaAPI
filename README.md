@@ -6,7 +6,7 @@ This API is for Connect Six programs developed with the Java programming languag
 이 API는 자바 프로그래밍 언어로 개발한 육목 AI를 프로그램들을 위한 API입니다. 모든 method들은 싱글 모드 서버와 연결하고 소통하기 위한 기능들이 구현되어있습니다.
 
 ## Methods
-1. ***public ConnectSix(String ip, int port, String color)***   
+* ***public ConnectSix(String ip, int port, String color)***   
 Creates an instance of the class ConnectSix and connects to the single mode server.
 When success, the field `redStones` will contain the positions of the red stones.
 The positions of the red stones will follow the strick notation explained above.
@@ -22,7 +22,7 @@ __Parameter__
     __Throws__
     - `ConnSixException` Throws an exception that happens when the network connection fail.
         Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.
-2. ***public String letsConnect(String ip, int port, String color)***   
+* ***public String letsConnect(String ip, int port, String color)***   
 Connects to the single mode server and gets the red stones' positions from the single mode server.
 This function will be called from the constructor function.
 Therefore making an instance of this class will automatically connect to the single mode server by calling this function.
@@ -33,13 +33,32 @@ __Parameter__
     - `color` String type that contains the stone color that the client will be using.   
        
     __Returns__
-    - The String that contatins the positions of the red stones. The positions will follow the strick notation explained above.   
+    - A String that contatins the positions of the red stones. The positions will follow the strick notation explained above.   
        
     __Throws__
     - `ConnSixException` Throws an exception that happens when the network connection fail.
 			Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.
-3. ***public String drawAndRead(String draw)***   
-4. ***public String getStoneAt(String position)***   
+* ***public String drawAndRead(String draw)***   
+Sends the position of the user's next move to the single mode server.
+The first move of black must be "K10" and the first move of white must be "", an empty String.
+If the user sends an invalid coordinate, an error message will be sent to the single mode server.
+<ol>
+	<li>"BADCOORD"<br>
+        - The coordinate if out of bounds</li>
+    <li>"NOTEMPTY"<br>
+        - The position is already occupied by another stone.</li> 
+    <li>"BADINPUT"<br>
+        - The first move is not "K10" for black or "" for white.<br>
+        - The moves other than the first move don't hold two positions.<br>
+        - Any other inputs that doesn't follow the position notation.
+    </li>
+</ol>
+    All positions will follow the position notation explained above.
+@param draw The position where the user will put their stones. 
+@return When the game continues, the position of the opponent's move, expressed in strict notation, will be returned.<br> 
+    When the game is over, the return value will be "WIN", "LOSE" or "EVEN".<br>
+@throws ConnSixException Throws an exception when communication with the single mode server failed.
+* ***public String getStoneAt(String position)***   
 <br>
 
 ## Coordinate System
