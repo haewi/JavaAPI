@@ -78,11 +78,14 @@ __Parameter__
         - `White` `Black`   
        
     __Returns__
-    - A String that contatins the positions of the red stones. The positions will follow the strict notation explained above.   
+    - A String that contatins the positions of the red stones. The positions will follow the `strict notation` explained above.   
+    적돌의 좌표 정보가 담긴 문자열을 리턴한다. 이 좌표들은 위에서 설명한 `strict notation`을 따른다.   
        
     __Throws__
     - `ConnSixException` Throws an exception that happens when the network connection fail.
-			Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.
+    Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.   
+    네트워크 연결이 실패하면 ConnSixException 예외를 던진다. 연결 실패는 잘못된 ip, port 정보, 프로토콜 에러 그리고 socket 생성 관련 IOException 때문에 발생할 수 있다.   
+
 3. ***public String drawAndRead(String draw)***   
 Sends the position of the user's next move to the single mode server.
 The first move of black must be "K10" and the first move of white must be "", an empty String.
@@ -101,7 +104,7 @@ All positions will follow the position notation explained above.
     - `draw` The position where the user will put their stones.   
        
     __Returns__
-    - When the game continues, the position of the opponent's move, expressed in strict notation, will be returned.
+    - When the game continues, the position of the opponent's move, expressed in `strict notation`, will be returned.
         When the game is over, the return value will be "WIN", "LOSE" or "EVEN".<br>   
        
     __Throws__
