@@ -50,7 +50,8 @@ All positions will follow the position notation explained above.
     3. `BADINPUT`
         - The first move is not "K10" for black or "" for white.
         - The moves other than the first move don't hold two positions.
-        - Any other inputs that doesn't follow the position notation.      
+        - Any other inputs that doesn't follow the position notation.   
+       
     __Parameter__   
     - `draw` The position where the user will put their stones.   
        
