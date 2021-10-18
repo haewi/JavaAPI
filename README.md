@@ -38,19 +38,25 @@ ConnectSix class의 객체를 만들어주는 동시에 싱글 모드 서버에 
 사용자는 제일 먼저 이 constructor를 이용해서 class의 객체를 만들어야만 싱글 모드 서버와 연결하고 다른 method들을 사용할 수 있다.
 <br><br>
 __Parameter__
-    - `ip` String type that contains the ip information.   
+    - `ip`   
+    String type that contains the ip information.   
     ip 정보를 가지고 있는 문자열.   
         - Ex) "127.0.0.1"
-    - `port` Integer type that contains the port number information.   
+    - `port`   
+    Integer type that contains the port number information.   
     port 정보를 가지고 있는 정수.
         - Ex) 8080
-    - `color` String type that contains the color of the stone that the client will be using.   
+    - `color`   
+    String type that contains the color of the stone that the client will be using.   
     사용자가 사용할 돌의 색 정보를 가지고 있는 문자열.
         - `White` `Black`
        
     __Throws__
-    - `ConnSixException` Throws an exception that happens when the network connection fail.
-        Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.
+    - `ConnSixException`   
+    Throws an exception that happens when the network connection fail.
+    Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.   
+    네트워크 연결이 실패하면 ConnSixException 예외를 던진다. 연결 실패는 잘못된 ip, port 정보, 프로토콜 에러 그리고 socket 생성 관련 IOException 때문에 발생할 수 있다.
+   
 2. ***public String letsConnect(String ip, int port, String color)***   
 Connects to the single mode server and gets the red stones' positions from the single mode server.
 This function will be called from the constructor function.
