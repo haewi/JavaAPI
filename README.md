@@ -30,9 +30,9 @@ Creates an instance of the class ConnectSix and connects to the single mode serv
 When success, the field `redStones` will contain the positions of the red stones as a String type.
 The positions of the red stones will follow the `strict notation` explained above.
 On connection failure, the constructor will throw ConnSixException.
-If there is no red stones to begin with, the field 'redStones' will contain the null value.
+If there is no red stones to begin with, the field `redStones` will contain the null value.
 The user must make a instance of the class using this constructor in order to use the single mode server and other methods.   
-ConnectSix class의 객체를 만들어주는 동시에 싱글 모드 서버에 연결해준다. 객체를 생성하는 것을 성공하면 `redStones`라는 field 안에 문자열로 적돌의 좌표를 저장한다.
+ConnectSix class의 객체를 만들어주는 동시에 싱글 모드 서버에 연결해준다. 객체를 생성하는 것에 성공하면 `redStones`라는 field 안에 문자열로된 적돌의 좌표를 저장한다.
 이때 적돌의 좌표는 위에서 설명한 `strict notation`를 따른다. 객체를 생성하는 것이 실패했을 경우 ConnSixException을 던진다.
 적돌이 없는 경우, `redStones`에는 null 값이 들어간다.
 사용자는 제일 먼저 이 constructor를 이용해서 class의 객체를 만들어야만 싱글 모드 서버와 연결하고 다른 method들을 사용할 수 있다.
@@ -40,7 +40,7 @@ ConnectSix class의 객체를 만들어주는 동시에 싱글 모드 서버에 
 __Parameter__
     - `ip` String type that contains the ip information.   
     ip 정보를 가지고 있는 문자열.   
-    Ex) "127.0.0.1".
+        - Ex) "127.0.0.1".
     - `port` Integer type that contains the port number information. For example, 8080.
     - `color` String type that contains the color of the stone that the client will be using. For example, "White" or "Black".   
        
