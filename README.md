@@ -59,13 +59,23 @@ __Parameter__
    
 2. ***public String letsConnect(String ip, int port, String color)***   
 Connects to the single mode server and gets the red stones' positions from the single mode server.
-This function will be called from the constructor function.
-Therefore making an instance of this class will automatically connect to the single mode server by calling this function.
+This function will be called from the constructor method.
+Therefore making an instance of this class will automatically connect to the single mode server by calling this function.   
+싱글 모드 서버에 연결해주고 field `redStones`에 적돌의 위치를 넣어준다. 이 method는 constructor에서 부르기 때문에 따로 불러줄 필요가 없다.
 <br><br>
 __Parameter__
-    - `ip` String type that contains the ip information.
-    - `port` Integer type that contains the port number information.
-    - `color` String type that contains the stone color that the client will be using.   
+    - `ip`   
+    String type that contains the ip information.   
+    ip 정보를 가지고 있는 문자열.   
+        - Ex) "127.0.0.1"
+    - `port`   
+    Integer type that contains the port number information.   
+    port 정보를 가지고 있는 정수.
+        - Ex) 8080
+    - `color`   
+    String type that contains the color of the stone that the client will be using.   
+    사용자가 사용할 돌의 색 정보를 가지고 있는 문자열.
+        - `White` `Black`   
        
     __Returns__
     - A String that contatins the positions of the red stones. The positions will follow the strict notation explained above.   
