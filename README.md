@@ -14,7 +14,7 @@ On connection failure, the constructor will throw ConnSixException.
 If there is no red stones to begin with, the field 'redStones' will contain the null value.
 The user must make a instance of the class using this constructor in order to use the single mode server and other functions.
 <br><br>
-__Parameter__
+    __Parameter__
     - `ip` String type that contains the ip information. For example, "127.0.0.1".
     - `port` Integer type that contains the port number information. For example, 8080.
     - `color` String type that contains the color of the stone that the client will be using. For example, "White" or "Black".
