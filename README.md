@@ -19,7 +19,7 @@ __Parameter__
     - `port` Integer type that contains the port number information. For example, 8080.
     - `color` String type that contains the color of the stone that the client will be using. For example, "White" or "Black".   
        
-__Throws__
+    __Throws__
     - `ConnSixException` Throws an exception that happens when the network connection fail.
         Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.
 * public String letsConnect(String ip, int port, String color)
