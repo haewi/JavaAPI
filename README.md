@@ -53,11 +53,16 @@ If the user sends an invalid coordinate, an error message will be sent to the si
             - Any other inputs that doesn't follow the position notation.
         </li>
     </ol>
-    All positions will follow the position notation explained above.
-@param draw The position where the user will put their stones. 
-@return When the game continues, the position of the opponent's move, expressed in strict notation, will be returned.<br> 
-    When the game is over, the return value will be "WIN", "LOSE" or "EVEN".<br>
-@throws ConnSixException Throws an exception when communication with the single mode server failed.
+    **All positions will follow the position notation explained above.**   
+__Parameter__
+    - `draw` The position where the user will put their stones.   
+       
+    __Returns__
+    - When the game continues, the position of the opponent's move, expressed in strict notation, will be returned.
+        When the game is over, the return value will be "WIN", "LOSE" or "EVEN".<br>   
+   
+    __Throws__
+    - `ConnSixException` Throws an exception when communication with the single mode server failed.
 4. ***public String getStoneAt(String position)***   
 <br>
 
