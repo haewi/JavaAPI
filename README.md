@@ -20,7 +20,7 @@ The user must make a instance of the class using this constructor in order to us
         <li>`port` Integer type that contains the port number information. For example, 8080.</li>
         <li>`color` String type that contains the color of the stone that the client will be using. For example, "White" or "Black".</li>
     </ul>
-    __Throws__
+    **Throws**
     <ul>
         <li>`ConnSixException` Throws an exception that happens when the network connection fail.
         Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.</li>
