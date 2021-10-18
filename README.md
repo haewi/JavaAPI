@@ -39,7 +39,7 @@ ConnectSix class의 객체를 만들어주는 동시에 싱글 모드 서버에 
 <br><br>
 __Parameter__
     - `ip` String type that contains the ip information.   
-    ip 정보를 가지고 있는 문자열.   
+      ip 정보를 가지고 있는 문자열.   
         - Ex) "127.0.0.1".
     - `port` Integer type that contains the port number information. For example, 8080.
     - `color` String type that contains the color of the stone that the client will be using. For example, "White" or "Black".   
