@@ -42,17 +42,17 @@ __Parameter__
 Sends the position of the user's next move to the single mode server.
 The first move of black must be "K10" and the first move of white must be "", an empty String.
 If the user sends an invalid coordinate, an error message will be sent to the single mode server.
-<ol>
-	<li>"BADCOORD"<br>
-        - The coordinate if out of bounds</li>
-    <li>"NOTEMPTY"<br>
-        - The position is already occupied by another stone.</li> 
-    <li>"BADINPUT"<br>
-        - The first move is not "K10" for black or "" for white.<br>
-        - The moves other than the first move don't hold two positions.<br>
-        - Any other inputs that doesn't follow the position notation.
-    </li>
-</ol>
+    <ol>
+        <li>"BADCOORD"<br>
+            - The coordinate if out of bounds</li>
+        <li>"NOTEMPTY"<br>
+            - The position is already occupied by another stone.</li> 
+        <li>"BADINPUT"<br>
+            - The first move is not "K10" for black or "" for white.<br>
+            - The moves other than the first move don't hold two positions.<br>
+            - Any other inputs that doesn't follow the position notation.
+        </li>
+    </ol>
     All positions will follow the position notation explained above.
 @param draw The position where the user will put their stones. 
 @return When the game continues, the position of the opponent's move, expressed in strict notation, will be returned.<br> 
