@@ -31,8 +31,7 @@ When success, the field `redStones` will contain the positions of the red stones
 The positions of the red stones will follow the `strict notation` explained above.
 On connection failure, the constructor will throw ConnSixException.
 If there is no red stones to begin with, the field 'redStones' will contain the null value.
-The user must make a instance of the class using this constructor in order to use the single mode server and other methods.
-<br>
+The user must make a instance of the class using this constructor in order to use the single mode server and other methods.   
 ConnectSix class의 객체를 만들어주는 동시에 싱글 모드 서버에 연결해준다. 객체를 생성하는 것을 성공하면 `redStones`라는 field 안에 문자열로 적돌의 좌표를 저장한다.
 이때 적돌의 좌표는 위에서 설명한 `strict notation`를 따른다. 객체를 생성하는 것이 실패했을 경우 ConnSixException을 던진다.
 적돌이 없는 경우, `redStones`에는 null 값이 들어간다.
