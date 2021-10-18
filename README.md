@@ -26,6 +26,9 @@ The user must make a instance of the class using this constructor in order to us
         <li>`ConnSixException` Throws an exception that happens when the network connection fail.
         Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.</li>
     </ul>
+    <b>HI</b>
+    - hi
+    - hello
 * public String letsConnect(String ip, int port, String color)
 * public String drawAndRead(String draw)
 * public String getStoneAt(String position)
