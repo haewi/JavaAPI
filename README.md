@@ -62,7 +62,14 @@ All positions will follow the position notation explained above.
     __Throws__
     - `ConnSixException` Throws an exception when communication with the single mode server failed.
 4. ***public String getStoneAt(String position)***   
-<br>
+Returns the current state of the position.   
+<br><br>
+__Parameter__
+    - `position` The position of the state that the user is curious about.   
+       
+    __Returns__
+    - Returns can be `EMPTY`, `WHITE`, `BLACK` or `RED` according to the state of the position.
+        When the position does not follow the position notation, the function will return the null value.
 
 ## Coordinate System
 The coordinate is consisted with an alphabet character and a number. The columns are notated with `A` ~ `T` with `I` not included. The rows are notated with `01` ~ `19`. The one digit numbers may or may not have a leading 0. To express more than one coordinates, the coordinates should be separated with `:`.
