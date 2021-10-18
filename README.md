@@ -55,7 +55,7 @@ __Parameter__
     - `ConnSixException`   
     Throws an exception that happens when the network connection fail.
     Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.   
-    네트워크 연결이 실패하면 ConnSixException 예외를 던진다. 연결 실패는 잘못된 ip, port 정보, 프로토콜 에러 그리고 socket 생성 관련 IOException 때문에 발생할 수 있다.
+    네트워크 연결이 실패하면 `ConnSixException` 예외를 던진다. 연결 실패는 잘못된 ip, port 정보, 프로토콜 에러 그리고 socket 생성 관련 IOException 때문에 발생할 수 있다.
    
 2. ***public String letsConnect(String ip, int port, String color)***   
 Connects to the single mode server and gets the red stones' positions from the single mode server.
@@ -84,7 +84,7 @@ __Parameter__
     __Throws__
     - `ConnSixException` Throws an exception that happens when the network connection fail.
     Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.   
-    네트워크 연결이 실패하면 ConnSixException 예외를 던진다. 연결 실패는 잘못된 ip, port 정보, 프로토콜 에러 그리고 socket 생성 관련 IOException 때문에 발생할 수 있다.   
+    네트워크 연결이 실패하면 `ConnSixException` 예외를 던진다. 연결 실패는 잘못된 ip, port 정보, 프로토콜 에러 그리고 socket 생성 관련 IOException 때문에 발생할 수 있다.   
 
 3. ***public String drawAndRead(String draw)***   
 Sends the position of the user's next move to the single mode server.
