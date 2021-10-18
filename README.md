@@ -23,6 +23,21 @@ __Parameter__
     - `ConnSixException` Throws an exception that happens when the network connection fail.
         Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.
 * public String letsConnect(String ip, int port, String color)
+Connects to the single mode server and gets the red stones' positions from the single mode server.
+This function will be called from the constructor function.
+Therefore making an instance of this class will automatically connect to the single mode server by calling this function.
+<br><br>
+__Parameter
+    - `ip` String type that contains the ip information.
+    - `port` Integer type that contains the port number information.
+    - `color` String type that contains the stone color that the client will be using.   
+       
+    __Returns__
+    - The String that contatins the positions of the red stones. The positions will follow the strick notation explained above.   
+       
+    __Throws__
+    - `ConnSixException` Throws an exception that happens when the network connection fail.
+			Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.
 * public String drawAndRead(String draw)
 * public String getStoneAt(String position)
 <br>
