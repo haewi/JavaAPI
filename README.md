@@ -27,7 +27,7 @@ Connects to the single mode server and gets the red stones' positions from the s
 This function will be called from the constructor function.
 Therefore making an instance of this class will automatically connect to the single mode server by calling this function.
 <br><br>
-__Parameter
+__Parameter__
     - `ip` String type that contains the ip information.
     - `port` Integer type that contains the port number information.
     - `color` String type that contains the stone color that the client will be using.   
