@@ -92,7 +92,7 @@ The first move of black must be "K10" and the first move of white must be "", an
 If the user sends an invalid coordinate, an error message will be sent to the single mode server.
 All positions will follow the position notation explained above.   
 사용자의 다음 수를 싱글 모드 서버에 보내고 상대방의 다음 수를 리턴한다.
-흑돌의 첫 수는 무조건 `K10`이어야하고 백돌의 첫 수는 모조건 `""`, 즉 빈 문자열 이어야한다.
+흑돌의 첫 수는 무조건 `K10`이어야하고 백돌의 첫 수는 모조건 ``, 즉 빈 문자열 이어야한다.
 만약 사용자가 유효하지 않은 좌표를 보낸다면 상대방의 다음 수가 아닌 에러 메세지가 리턴될 것이다.
 모든 좌표들은 위에서 설명한 좌표 표기법을 따라야한다.
     1. `BADCOORD`
