@@ -42,11 +42,11 @@ __Parameter__
 Sends the position of the user's next move to the single mode server.
 The first move of black must be "K10" and the first move of white must be "", an empty String.
 If the user sends an invalid coordinate, an error message will be sent to the single mode server.
-    1. "BADCOORD"
+    1. `BADCOORD`
         - The coordinate if out of bounds
-    2. "NOTEMPTY"
+    2. `NOTEMPTY`
         - The position is already occupied by another stone.
-    3. "BADINPUT"
+    3. `BADINPUT`
         - The first move is not "K10" for black or "" for white.
         - The moves other than the first move don't hold two positions.
         - Any other inputs that doesn't follow the position notation.
