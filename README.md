@@ -62,8 +62,8 @@ All positions will follow the position notation explained above.
     __Throws__
     - `ConnSixException` Throws an exception when communication with the single mode server failed.
 4. ***public String getStoneAt(String position)***   
-Returns the current state of the position.   
-   
+Returns the current state of the position.
+<br><br>
 __Parameter__
     - `position` The position of the state that the user is curious about.   
        
