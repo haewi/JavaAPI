@@ -87,17 +87,24 @@ __Parameter__
     네트워크 연결이 실패하면 `ConnSixException` 예외를 던진다. 연결 실패는 잘못된 ip, port 정보, 프로토콜 에러 그리고 socket 생성 관련 IOException 때문에 발생할 수 있다.   
 
 3. ***public String drawAndRead(String draw)***   
-Sends the position of the user's next move to the single mode server.
+Sends the position of the user's next move to the single mode server and returns the opponent's next move.
 The first move of black must be "K10" and the first move of white must be "", an empty String.
 If the user sends an invalid coordinate, an error message will be sent to the single mode server.
 All positions will follow the position notation explained above.   
+사용자의 다음 수를 싱글 모드 서버에 보내고 상대방의 다음 수를 리턴한다.
+흑돌의 첫 수는 무조건 `K10`이어야하고 백돌의 첫 수는 모조건 `""`, 즉 빈 문자열 이어야한다.
+만약 사용자가 유효하지 않은 좌표를 보낸다면 상대방의 다음 수가 아닌 에러 메세지가 리턴될 것이다.
+모든 좌표들은 위에서 설명한 좌표 표기법을 따라야한다.
     1. `BADCOORD`
-        - The coordinate if out of bounds
+        - The coordinate if out of bounds.   
+        범위를 벗어난 좌표일 경우
     2. `NOTEMPTY`
-        - The position is already occupied by another stone.
+        - The position is already occupied by another stone.   
+        비어있지 않은 위치의 좌표일 경우
     3. `BADINPUT`
-        - The first move is not "K10" for black or "" for white.
-        - The moves other than the first move don't hold two positions.
+        - The first move is not `K10` for black or `""` for white.   
+        흑돌의 첫 수가 `K10`이 아니거나 백돌의 첫 수가 
+        - The moves other than the first move don't hold two positions.   
         - Any other inputs that doesn't follow the position notation.   
            
     __Parameter__   
