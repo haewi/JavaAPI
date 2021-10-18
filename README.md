@@ -54,9 +54,9 @@ If the user sends an invalid coordinate, an error message will be sent to the si
         </li>
     </ol>
     **All positions will follow the position notation explained above.**   
-__Parameter__
+__Parameter__   
     - `draw` The position where the user will put their stones.   
-       
+
     __Returns__
     - When the game continues, the position of the opponent's move, expressed in strict notation, will be returned.
         When the game is over, the return value will be "WIN", "LOSE" or "EVEN".<br>   
