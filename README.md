@@ -6,17 +6,31 @@ This API is for Connect Six programs developed with the Java programming languag
 이 API는 자바 프로그래밍 언어로 개발한 육목 AI를 프로그램들을 위한 API입니다. 모든 method들은 싱글 모드 서버와 연결하고 소통하기 위한 기능들이 구현되어있습니다.
 
 ## Methods
-* public ConnectSix(String ip, int port, String color)
-
+* public ConnectSix(String ip, int port, String color)<br>
+Creates an instance of the class ConnectSix and connects to the single mode server.
+When success, the field 'redStones' will contain the positions of the red stones.
+The positions of the red stones will follow the strick notation explained above.
+On connection failure, the constructor will throw ConnSixException.
+If there is no red stones to begin with, the field 'redStones' will contain the null value.
+The user must make a instance of the class using this constructor in order to use the single mode server and other functions.
+<br>
+### Parameter
+1. `ip` String type that contains the ip information. For example, "127.0.0.1".
+2. `port` Integer type that contains the port number information. For example, 8080.
+3. `color` String type that contains the color of the stone that the client will be using. For example, "White" or "Black".
+<br>
+### Throws
+@throws `ConnSixException` Throws an exception that happens when the network connection fail.
+        Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.
 * public String letsConnect(String ip, int port, String color)
 * public String drawAndRead(String draw)
 * public String getStoneAt(String position)
 <br>
 
 ## Coordinate System
-The coordinate is consisted with an alphabet character and a number. The columns are notated with `A` ~ `T` with `I` not included. The rows are notated with 1 ~ 19. The one digit numbers may or may not have a leading 0. To express more than one coordinates, the coordinates should be separated with `:`.
+The coordinate is consisted with an alphabet character and a number. The columns are notated with `A` ~ `T` with `I` not included. The rows are notated with `01` ~ `19`. The one digit numbers may or may not have a leading 0. To express more than one coordinates, the coordinates should be separated with `:`.
 <br>
-바둑판의 좌표는 alphabet character 하나와 숫자로 표기합니다. 바둑판의 세로줄은 alphabet `A` 부터 `T` 로 표기하고 이때 `I`는 포함되지 않습니다. 가로줄은 숫자 1 부터 19로 표기하며 10 이하의 숫자들은 십의 자리를 0으로 표기해도 안해도됩니다. 하나의 좌표는 이 두 정보를 합친 String으로 표현해야합니다. 여러 좌표들을 표기하기 위해서는 좌표들 사이에 `:`를 넣어 하나의 String으로 만들어야합니다.
+바둑판의 좌표는 alphabet character 하나와 숫자로 표기합니다. 바둑판의 세로줄은 alphabet `A` 부터 `T` 로 표기하고 이때 `I`는 포함되지 않습니다. 가로줄은 숫자 `01` ~ `19`로 표기하며 10 이하의 숫자들은 십의 자리를 0으로 표기해도 안해도됩니다. 하나의 좌표는 이 두 정보를 합친 String으로 표현해야합니다. 여러 좌표들을 표기하기 위해서는 좌표들 사이에 `:`를 넣어 하나의 String으로 만들어야합니다.
 * Ex) `A01`, `A1`, `B03`, `B3`, `J12`, `A01:E13`, `E11:J18:K10:T19`
 <br>
 Strict notation: coorinate with leading 0.
