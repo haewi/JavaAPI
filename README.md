@@ -20,13 +20,8 @@ __Parameter__
     - `color` String type that contains the color of the stone that the client will be using. For example, "White" or "Black".
     <br>
     <b>Throws</b>
-    <ul>
-        <li>`ConnSixException` Throws an exception that happens when the network connection fail.
-        Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.</li>
-    </ul>
-    <b>HI</b>
-    - hi
-    - hello
+    - `ConnSixException` Throws an exception that happens when the network connection fail.
+        Connection failure can happen because of ip, port information error, underlying protocol error and IOException related to socket creation.
 * public String letsConnect(String ip, int port, String color)
 * public String drawAndRead(String draw)
 * public String getStoneAt(String position)
